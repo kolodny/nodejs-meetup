@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-meetup",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.15"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- --reporter dot",
+    "test-travis": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolodny/nodejs-meetup.git"
+  },
+  "author": "Moshe Kolodny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kolodny/nodejs-meetup/issues"
+  },
+  "homepage": "https://github.com/kolodny/nodejs-meetup#readme"
+}
